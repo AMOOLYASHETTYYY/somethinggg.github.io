@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS Animation Demo</title>
+</head>
+<body>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+    background-color:rgb(97, 199, 222);
+  }
+  p{
+    font-size: 22px;
+  }
+
+  .scrolling-text {
+    position: absolute;
+    white-space: nowrap;
+    animation: scrollAnimation 10s linear infinite;
+    color:black;
+    font-size: xx-large;
+    font-style: italic;
+  }
+  
+  @keyframes scrollAnimation {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(450%);
+    }
+  }
+
+  .blinking-text {
+    animation: blinkAnimation 1s alternate infinite;
+    font-size: xx-large;
+    color:rgb(7, 9, 57);
+  }
+
+  @keyframes blinkAnimation {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+</style>
+<center>
+  <div class="text">
+  <div class="scrolling-text">SANMATHI CAFE NITTE</div><br><br><br>
+    <IMG SRC="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-XnV-SDqpAmPVwm_lGDdjUPZu0sKNaQCohw&usqp=CAU" height="300px" width="350px"><br><br><br>
+        <p>Sanmathi is the very popular cafe amongst the students of NITTE.You will try nicely cooked chicken, biryani and sandwiches. According to the visitors' opinions, waiters serve tasty ice cream and good chocolate fudge here. Great coffee, hot chocolate or milkshakes are among the best drinks to try.
+
+The patient staff welcomes guests all year round. This cafe is remarkable for its spectacular service. You may pay your attention to the cool atmosphere. 4.4 is what Sanmathi Cafe (K B) got from the Google rating system.</p>
+  <div class="blinking-text">VISIT SOON!!</div>
+  </div>
+</body>
+</center>
+</ht
